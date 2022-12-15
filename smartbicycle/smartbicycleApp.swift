@@ -3,7 +3,7 @@
 //  smartbicycle
 //
 //  Created by rex on 2022/12/8.
-//
+// commit 1
 
 import SwiftUI
 
@@ -11,14 +11,13 @@ import SwiftUI
 struct smartbicycleApp: App {
     let persistenceController = PersistenceController.shared
     @StateObject private var modelData = ModelData()
-    @EnvironmentObject var store:Store
+ 
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Login()
                 .environmentObject(modelData)
-                .environmentObject(Store())
-            
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

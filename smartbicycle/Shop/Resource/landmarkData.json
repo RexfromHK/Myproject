@@ -1,0 +1,88 @@
+[
+    {
+        "name": "新華南單車公司",
+        "category": "",
+        "city": "",
+        "state": "",
+        "id": 1,
+        "isFeatured": true,
+        "isFavorite": true,
+        "phone": "26014105",
+        "coordinates": {
+            "longitude": 114.1727027,
+            "latitude": 22.3732233
+        },
+        "address": "海福花園商場地下25號",
+        "imageName": "image1"
+    },
+        
+    {
+        "name": "利行單車",
+        "category": "",
+        "city": "",
+        "state": "",
+        "id": 2,
+        "isFeatured": true,
+        "isFavorite": true,
+        "phone": "26065166",
+        "coordinates": {
+            "longitude": 114.1756065,
+            "latitude": 22.3738204
+        },
+        "address": "大圍海福花園商場7號",
+        "imageName": "image2"
+    },
+        
+    {
+        "name": "添好運單車",
+        "category": "",
+        "city": "",
+        "state": "",
+        "id": 3,
+        "isFeatured": true,
+        "isFavorite": true,
+        "phone": "26066878",
+        "coordinates": {
+            "longitude": 114.1771749,
+            "latitude": 22.3744362
+        },
+        "address": "大圍積壽里3號",
+        "imageName": "image3"
+    },
+        
+    {
+        "name": "Extreme Bikes",
+        "category": "",
+        "city": "",
+        "state": "",
+        "id": 4,
+        "isFeatured": true,
+        "isFavorite": true,
+        "phone": "51668448",
+        "coordinates": {
+            "longitude": 114.1774646,
+            "latitude": 22.3746991
+        },
+        "address": "大圍積福街21號",
+        "imageName": "image4"
+    },
+        
+    {
+        "name": "亞運單車",
+        "category": "",
+        "city": "",
+        "state": "",
+        "id": 5,
+        "isFeatured": true,
+        "isFavorite": true,
+        "phone": "26053928",
+        "coordinates": {
+            "longitude": 114.1774646,
+            "latitude": 22.3746991
+        },
+        "address": "沙田大圍積壽里8號",
+        "imageName": "image5"
+    }
+   
+    
+]
