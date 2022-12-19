@@ -73,7 +73,7 @@ struct Registration: View {
                     NavigationLink(
                         destination: Login(),
                         label:{
-                         Text("Go to login now")
+                         Text("Go Back")
                             .padding()
                             .foregroundColor(.white)
                             .frame(width: 300, height: 50)

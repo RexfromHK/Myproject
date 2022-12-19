@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD344503295063FA0024AE50 /* BiometricModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD344502295063FA0024AE50 /* BiometricModel.swift */; };
+		CD344506295075F80024AE50 /* personal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD344505295075F80024AE50 /* personal.swift */; };
 		CD40E81B294AF471007AB30A /* Todolist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD40E81A294AF471007AB30A /* Todolist.swift */; };
 		CD40E81D294AF479007AB30A /* AddDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD40E81C294AF479007AB30A /* AddDeviceView.swift */; };
 		CD40E820294AF588007AB30A /* Device+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD40E81E294AF588007AB30A /* Device+CoreDataClass.swift */; };
@@ -58,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD344502295063FA0024AE50 /* BiometricModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiometricModel.swift; sourceTree = "<group>"; };
+		CD344505295075F80024AE50 /* personal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personal.swift; sourceTree = "<group>"; };
 		CD40E81A294AF471007AB30A /* Todolist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todolist.swift; sourceTree = "<group>"; };
 		CD40E81C294AF479007AB30A /* AddDeviceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDeviceView.swift; sourceTree = "<group>"; };
 		CD40E81E294AF588007AB30A /* Device+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -122,6 +126,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD344504295075D10024AE50 /* Personal */ = {
+			isa = PBXGroup;
+			children = (
+				CD344505295075F80024AE50 /* personal.swift */,
+			);
+			path = Personal;
+			sourceTree = "<group>";
+		};
 		CDA15B3B29471D100045326D /* Map */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +199,7 @@
 				CDA15B3B29471D100045326D /* Map */,
 				CDFBE6A82946CC2600BE6D51 /* Weather */,
 				CDFF26A9294840A8000ABB70 /* Todolist */,
+				CD344504295075D10024AE50 /* Personal */,
 				CDE698852942C898009F4440 /* Assets.xcassets */,
 				CDE6988A2942C898009F4440 /* Persistence.swift */,
 				CDE6988F2942C898009F4440 /* Info.plist */,
@@ -228,6 +241,7 @@
 				CDE698832942C897009F4440 /* Login.swift */,
 				CD8ADB862944A7DA001FC394 /* Registration.swift */,
 				CDE698B32942CFEA009F4440 /* Home.swift */,
+				CD344502295063FA0024AE50 /* BiometricModel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -392,6 +406,7 @@
 				CDD3910C294386F500C295CD /* LandmarkList.swift in Sources */,
 				CD42D0902944352B00B1ADD7 /* ModelData.swift in Sources */,
 				CDE6988B2942C898009F4440 /* Persistence.swift in Sources */,
+				CD344503295063FA0024AE50 /* BiometricModel.swift in Sources */,
 				CD42D0962944396F00B1ADD7 /* Location.swift in Sources */,
 				CDE698C52942EEA2009F4440 /* test.swift in Sources */,
 				CDE698842942C897009F4440 /* Login.swift in Sources */,
@@ -403,6 +418,7 @@
 				CDD391112943874C00C295CD /* CircleImage.swift in Sources */,
 				CDE698C32942E23D009F4440 /* AnnotatedItem.swift in Sources */,
 				CD40E821294AF588007AB30A /* Device+CoreDataProperties.swift in Sources */,
+				CD344506295075F80024AE50 /* personal.swift in Sources */,
 				CDE698C02942D2C2009F4440 /* MapViewDelegate.swift in Sources */,
 				CDE698822942C897009F4440 /* smartbicycleApp.swift in Sources */,
 				CDE698B42942CFEA009F4440 /* Home.swift in Sources */,

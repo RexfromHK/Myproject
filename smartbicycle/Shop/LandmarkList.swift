@@ -35,7 +35,11 @@ struct LandmarkList: View {
             .navigationBarHidden(true)
             
         }
+        
     }
+    
+    
+    
 }
 
 struct LandmarkList_Previews: PreviewProvider {

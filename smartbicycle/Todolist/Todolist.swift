@@ -36,6 +36,10 @@ NavigationView {
     AddDeviceView(showingSheet: $showingSheet)
     
    })
+        
+        
+        
+
    }
 
 

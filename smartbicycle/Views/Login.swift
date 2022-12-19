@@ -9,6 +9,7 @@ import SwiftUI
 import CoreData
 
 struct Login: View {
+    @StateObject var model = BiometricModel()
     @State private var username = ""
     @State private var password = ""
     @State private var wrongUsername: Float = 0
@@ -30,51 +31,99 @@ struct Login: View {
 
                 
                 VStack {
-                    Text("Sbicycle-Login")
+                    Text("User Login")
                         .font(.largeTitle)
                         .bold()
                         .padding()
                     
-                    TextField("Username", text: $username)
-                        .padding()
-                        .frame(width: 300, height: 50)
-                        .background(Color.black.opacity(0.05))
-                        .cornerRadius(10)
-               
-                        
+
                     
-                    SecureField("Password", text: $password)
-                        .padding()
-                        .frame(width: 300, height: 50)
-                        .background(Color.black.opacity(0.05))
-                        .cornerRadius(10)
-                        
-  //1
+                
+                   
+
                     
+                    
+                    if model.isAuthenicated == true {
+                        
+                        
+                        
                         NavigationLink(
                             destination: Home(),
                             label:{
-                             Text("Login")
-                                .padding()
+                             Text("Click here to login")
                                 .foregroundColor(.white)
                                 .frame(width: 300, height: 50)
-                                .background(Color.green)
+                                .background(Color.yellow)
                                 .cornerRadius(10)
                                     })
-                    
-                    
-                    NavigationLink(
-                        destination: Registration(),
-                        label:{
-                         Text("Registration")
+                        
+                    }else{
+                        
+                        TextField("Username", text: $username)
+                            .padding()
+                            .frame(width: 300, height: 50)
+                            .background(Color.black.opacity(0.05))
+                            .cornerRadius(10)
+                   
+                            
+                        
+                        SecureField("Password", text: $password)
+                            .padding()
+                            .frame(width: 300, height: 50)
+                            .background(Color.black.opacity(0.05))
+                            .cornerRadius(10)
+                            
+      //1
+                        HStack{
+                            NavigationLink(
+                                destination: Home(),
+                                label:{
+                                 Text("Login")
+                                    .padding()
+                                    .foregroundColor(.white)
+                                    .frame(width: 150, height: 50)
+                                    .background(Color.green)
+                                    .cornerRadius(10)
+                                        })
+                            
+                            NavigationLink(
+                                destination: Registration(),
+                                label:{
+                                 Text("Registration")
+                                    .padding()
+                                    .foregroundColor(.white)
+                                    .frame(width: 150, height: 50)
+                                    .background(Color.green)
+                                    .cornerRadius(10)
+                                        })
+                        
+                        }
+ 
+                        Button(action: {
+                        model.evaluatePolicy()
+                        }, label: {
+                        Text("Face ID Login")
                             .foregroundColor(.white)
                             .frame(width: 300, height: 50)
-                            .background(Color.green)
+                            .background(Color.red)
                             .cornerRadius(10)
-                                })
+                        })
+                            
+                        
+                        
+
+                    }
+                    }
                     
+                    .padding()
+                    .onAppear {
+                    model.checkPolicy()
                   }
+                
+                
                 }
+            
+            
             }
             .navigationBarTitle("")
             .navigationBarBackButtonHidden(true)

@@ -7,8 +7,13 @@
 
 import SwiftUI
 struct Home: View {
+    
+    
  var body: some View {
+ 
+    
  TabView {
+
 
  LandmarkList().tabItem ({
  Image(systemName: "mappin.circle.fill")
@@ -30,10 +35,20 @@ Image(systemName: "map.fill")
     Text("Todolist")
     }).tag(3)
     
+    personal().tabItem({
+    Image(systemName: "person")
+    Text("Person")
+    }).tag(4)
+    
  }
+
  //.navigationBarTitle("")
  .navigationBarBackButtonHidden(true)
- .navigationBarHidden(true) }
+ .navigationBarHidden(true)
+    
+
+    
+ }
 }
 
 struct HomeView_Previews: PreviewProvider {
