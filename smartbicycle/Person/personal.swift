@@ -10,6 +10,18 @@ import SwiftUI
 
 struct personal: View {
     var body: some View {
+
+        VStack{
+                        Text("UserName : admin")
+                            .font(.system(size:17))
+                            .padding()
+                    
+
+                    Divider()
+                   
+
+                    
+        
         NavigationLink(
     destination: Login(),
     label:{
@@ -19,8 +31,11 @@ struct personal: View {
         .background(Color.yellow)
         .cornerRadius(10)
             })
-    }
+    
+        }
 }
+}
+        
 
 
 struct personal_Previews: PreviewProvider {
