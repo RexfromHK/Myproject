@@ -102,7 +102,7 @@ struct Login: View {
                         Button(action: {
                         model.evaluatePolicy()
                         }, label: {
-                        Text("Face ID Login")
+                        Text("Biometric")
                             .foregroundColor(.white)
                             .frame(width: 300, height: 50)
                             .background(Color.red)

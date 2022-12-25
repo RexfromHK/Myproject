@@ -36,7 +36,6 @@
 		CDE698BE2942D199009F4440 /* OverlayMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE698BD2942D199009F4440 /* OverlayMapView.swift */; };
 		CDE698C02942D2C2009F4440 /* MapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE698BF2942D2C2009F4440 /* MapViewDelegate.swift */; };
 		CDE698C32942E23D009F4440 /* AnnotatedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE698C22942E23D009F4440 /* AnnotatedItem.swift */; };
-		CDE698C52942EEA2009F4440 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE698C42942EEA2009F4440 /* test.swift */; };
 		CDFBE6AD2946CC3900BE6D51 /* SimpleContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFBE6A92946CC3900BE6D51 /* SimpleContact.swift */; };
 		CDFBE6AF2946CC3900BE6D51 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFBE6AB2946CC3900BE6D51 /* APIModel.swift */; };
 		CDFBE6B82946D0B900BE6D51 /* wheatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFBE6B72946D0B900BE6D51 /* wheatherView.swift */; };
@@ -95,7 +94,6 @@
 		CDE698BD2942D199009F4440 /* OverlayMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayMapView.swift; sourceTree = "<group>"; };
 		CDE698BF2942D2C2009F4440 /* MapViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewDelegate.swift; sourceTree = "<group>"; };
 		CDE698C22942E23D009F4440 /* AnnotatedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotatedItem.swift; sourceTree = "<group>"; };
-		CDE698C42942EEA2009F4440 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		CDFBE6A92946CC3900BE6D51 /* SimpleContact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleContact.swift; sourceTree = "<group>"; };
 		CDFBE6AB2946CC3900BE6D51 /* APIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
 		CDFBE6B72946D0B900BE6D51 /* wheatherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wheatherView.swift; sourceTree = "<group>"; };
@@ -126,12 +124,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CD344504295075D10024AE50 /* Personal */ = {
+		CD344504295075D10024AE50 /* Person */ = {
 			isa = PBXGroup;
 			children = (
 				CD344505295075F80024AE50 /* personal.swift */,
 			);
-			path = Personal;
+			path = Person;
 			sourceTree = "<group>";
 		};
 		CDA15B3B29471D100045326D /* Map */ = {
@@ -172,7 +170,6 @@
 		CDE698752942C897009F4440 = {
 			isa = PBXGroup;
 			children = (
-				CDE698C42942EEA2009F4440 /* test.swift */,
 				CDE698802942C897009F4440 /* smartbicycle */,
 				CDE698972942C898009F4440 /* smartbicycleTests */,
 				CDE698A22942C898009F4440 /* smartbicycleUITests */,
@@ -199,7 +196,7 @@
 				CDA15B3B29471D100045326D /* Map */,
 				CDFBE6A82946CC2600BE6D51 /* Weather */,
 				CDFF26A9294840A8000ABB70 /* Todolist */,
-				CD344504295075D10024AE50 /* Personal */,
+				CD344504295075D10024AE50 /* Person */,
 				CDE698852942C898009F4440 /* Assets.xcassets */,
 				CDE6988A2942C898009F4440 /* Persistence.swift */,
 				CDE6988F2942C898009F4440 /* Info.plist */,
@@ -408,7 +405,6 @@
 				CDE6988B2942C898009F4440 /* Persistence.swift in Sources */,
 				CD344503295063FA0024AE50 /* BiometricModel.swift in Sources */,
 				CD42D0962944396F00B1ADD7 /* Location.swift in Sources */,
-				CDE698C52942EEA2009F4440 /* test.swift in Sources */,
 				CDE698842942C897009F4440 /* Login.swift in Sources */,
 				CDD3910F294386F500C295CD /* LandmarkRow.swift in Sources */,
 				CDD3910D294386F500C295CD /* LandmarkDetail.swift in Sources */,

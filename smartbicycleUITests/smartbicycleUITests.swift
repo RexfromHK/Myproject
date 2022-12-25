@@ -22,7 +22,7 @@ class smartbicycleUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    func testTextField() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
@@ -39,4 +39,41 @@ class smartbicycleUITests: XCTestCase {
             }
         }
     }
+    
+    func testLoginForm() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let username = app.textFields["Username"]
+        XCTAssert(username.exists)
+        app.textFields.element.tap()
+        app.textFields.element.typeText("admin")
+        app.keyboards.buttons["Return"].tap()
+    
+        let password = app.secureTextFields["Password"]
+        XCTAssert(password.exists)
+        app.secureTextFields.element.tap()
+        
+    }
+    
+    func testregistration() throws {
+        let app = XCUIApplication()
+        app.launch()
+        let registration = app.buttons["Registration"]
+        XCTAssert(registration.exists)
+        XCTAssertEqual(registration.label, "Registration")
+        app.buttons["Registration"].tap()
+        
+    }
+    
+    func testBiometric() throws {
+        let app = XCUIApplication()
+        app.launch()
+        let Biometric = app.buttons["Biometric"]
+        XCTAssert(Biometric.exists)
+        XCTAssertEqual(Biometric.label, "Biometric")
+        app.buttons["Biometric"].tap()
+        
+    }
+    
 }
