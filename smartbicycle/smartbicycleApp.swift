@@ -2,7 +2,7 @@
 //  smartbicycleApp.swift
 //  smartbicycle
 //
-//  Created by rex on 2022/12/8.
+//  Created by rex on 2023/01/10.
 // commit 20
 
 import SwiftUI
